@@ -18,34 +18,34 @@
    <fieldset>
 
     <label for="first-name">Enter Your First Name: 
-      <input type="text" id="first-name" required>
+      <input type="text" id="first-name" name="first-name" required>
     </label>
     
     <label for="last-name">Enter Your Last Name:
-      <input type="text" id="last-name" required>
+      <input type="text" id="last-name" name="last-name" required>
     </label>
    
     <label for="email">Enter Your Email:
-      <input type="email" id="email" required>
+      <input type="email" id="email" name="email" required>
     </label>
 
     <label for="new-password">Create New Password:
-      <input type="password" id="new-password"  pattern="[a-z0-5]{8,}" required>
+      <input type="password" id="new-password" name="new-password"  pattern="[a-z0-5]{8,}" required>
     </label>
    </fieldset>
 
    <!-- 2nd Fieldset -->
    <fieldset>
     <label for="personal-account"> 
-      <input type="radio" name="account-type" id="personal-account">Personal Account
+      <input class="inline" type="radio" name="account-type" id="personal-account">Personal Account
     </label>
 
     <label for="business-account">
-      <input type="radio" name="account-type" id="business-account"> Business Account
+      <input class="inline" type="radio" name="account-type" id="business-account"> Business Account
     </label>
 
     <label for="terms-and-conditions"> 
-      <input type="checkbox" id="terms-and-conditions" required> I accept the 
+      <input class="inline" type="checkbox" id="terms-and-conditions" name="terms" required> I accept the 
       <a href="https://www.freecodecamp.org/news/terms-of-service/" target="_blank">terms and conditions</a>
     </label>
    </fieldset>
@@ -53,23 +53,27 @@
 
    <!-- 3rd Fieldset -->
    <fieldset>
-    <label for=""><input type="file" >
+    <label for="profile-picture"><input type="file" id="profile-picture" name="file" >
     Upload a profile picture: 
     </label>
 
-    <label for=""> Input your age (years): 
-      <input type="number" min="13" max="120">
+    <label for="age"> Input your age (years): 
+      <input type="number" name="age" min="13" max="120" id="age">
     </label>
 
-    <label>How did you hear about us?
-    <select name="" id="">
-      <option>(select one)</option>
-      <option>freeCodeCamp News</option>
-      <option>freeCodeCamp YouTube Channel</option>
-      <option>freeCodeCamp Forum</option>
-      <option>Other</option>
+    <label for="referrer">How did you hear about us?
+    <select  id="referrer" name="referrer">
+      <option value="">(select one)</option>
+      <option value="1">freeCodeCamp News</option>
+      <option value="2" >freeCodeCamp YouTube Channel</option>
+      <option value="3" >freeCodeCamp Forum</option>
+      <option value="4" >Other</option>
     </select>
   </label>
+  <label for="bio">Provide a bio:
+    <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+  </label>
+
    </fieldset>
 
    <input type="submit" value="Submit">
