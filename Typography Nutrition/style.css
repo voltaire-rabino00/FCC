@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800.');
+*{
+  box-sizing: border-box;
+}
+html{
+  font-size: 16px;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+.label{
+  border: 2px solid black;
+  width: 270px;
+  margin: 20px auto;
+  padding: 0 7px;
+} 
+header h1{
+  letter-spacing: 0.15px;
+  text-align: center;
+  margin: -4px 0;
+}
+p{
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.divider{
+  border-bottom: 1px solid #888989;
+  margin: 2px 0;
+}
+.bold{
+  font-weight: 800;
+}
