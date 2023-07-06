@@ -29,15 +29,49 @@
     <div class="info"><label for="address">Email Address</label>
       <input type="email" id="address" name="address" placeholder="Enter your Email Address"></div>
     </div>
-    <div class="info"><label for="birth">Date Of Birth</label>
+    <div class="info"><label for="birth">D.O.B <span class="sr-only">(Date Of Birth)</span></label>
       <input type="date" id="birth" name="birth">
     </div>
   </section>
   <section role="region" aria-labelledby="html-questions">
     <h2 id="html-questions">HTML Questions</h2>
+    <div class="question-block">
+      <p>1</p>
+      <fieldset class="question" name="HTML">
+       <legend>HTML is Great?</legend>
+       <ul class="answers-list">
+       <li><label for="q1-a1">
+        <input type="radio" id="q1-a1" value="True" name="q1">True
+       </label></li>
+       <li><label for="q1-a2">
+        <input type="radio" id="q1-a2" value="False" name="q1">False
+       </label></li>
+       </ul>
+      </fieldset> 
+    </div>
+    <div class="question-block">
+      <p>2</p>
+      <fieldset class="question" name="Css">
+        <legend>Css is good?</legend>
+        <ul class="answers-list">
+         <li><label for="q2-a1">
+          <input type="radio" id="q2-a1" value="True" name="q2">True
+         </label></li>
+         <li><label for="q2-a2">
+          <input type="radio" id="q2-a2" value="False" name="q2">False
+         </label></li>
+        </ul>
+      </fieldset>
+    </div>
   </section>
   <section role="region" aria-labelledby="css-questions">
     <h2 id="css-questions">CSS Questions</h2>
+    <div class="formrow">
+      <div class="question-block"></div>
+      <div class="answer"></div>
+      <div class="question-block"></div>
+      <div class="answer"></div>
+    </div>
   </section>
   </form>
  </main>
