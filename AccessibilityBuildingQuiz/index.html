@@ -13,9 +13,9 @@
     <h1>HTML/CSS Quiz</h1>
     <nav>
       <ul>
-        <li><a href="#student-info">INFO</a></li>
-        <li><a href="#html-questions">HTML</a></li>
-        <li><a href="#css-questions">CSS</a></li>
+        <li><a href="#student-info" accesskey="i">INFO</a></li>
+        <li><a href="#html-questions" accesskey="h">HTML</a></li>
+        <li><a href="#css-questions" accesskey="c">CSS</a></li>
       </ul>
     </nav>
  </header>
@@ -68,22 +68,33 @@
     <h2 id="css-questions">CSS Questions</h2>
     <div class="formrow">
       <div class="question-block">
-        <label for="">Css is a Programming Language?</label>
+        <label for="answer">Are you a FrontEnd Developer?</label>
       </div>
       <div class="answer">
-        <select name="" id="" required>
+        <select name="" id="answer" name="answer" required>
           <option value="">Select an Option</option>
           <option value="yes">Yes</option>
           <option value="No">No</option>
         </select>
       </div>
       <div class="question-block">
-        <label for="">Css is Good?</label>
+        <label for="question">Are you a Front End Developer?</label>
       </div>
-      <div class="answer"></div>
+      <div class="answer">
+        <textarea id="question" name="question" cols="30" rows="10" placeholder="Enter Your Answer"></textarea>
+      </div>
     </div>
   </section>
+  <button type="submit" value="Submit">Send</button>
   </form>
  </main>
+<footer>
+  <address>
+    <a href="https://freecodecamp.org">freeCodeCamp</a><br />
+    San Francisco<br />
+    California<br />
+    USA
+  </address>
+</footer>
 </body>
 </html>
