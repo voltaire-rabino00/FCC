@@ -6,6 +6,7 @@
   --window-color1: black;
   --window-color2: #8cd9b3;
   --window-color3: #d98cb3;
+  --window-color4: #8cb3d9;
 }
 
 
@@ -28,13 +29,20 @@ body{
   align-items: flex-end;
   justify-content: space-evenly;
 }
+.building-wrap{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.window-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
 /* Background Building  */
 .bb1 {
   width: 10%;
   height: 70%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 .bb1a{
   width: 70%; 
@@ -108,16 +116,36 @@ body{
   height: 85% ;
   background-color: var(--building-color4);
 }
+.bb4-window{
+  width: 18%;
+  height: 90%;
+  background-color: var(--window-color4);
+}
 /* Foreground buildings */
 .fb1{
   width: 10%;
   height: 60%;
-  background-color: var(--building-color4);
 }
 .fb2{
   width: 10%;
   height: 40%;
   background-color: var(--building-color3);
+}
+.fb1b{
+  width: 60%;
+  height: 10%;
+  background-color: var(--building-color4);
+}
+.fb1c{
+  width: 100%;
+  height: 80%;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--building-color4) 0%,
+    var(--building-color4) 10% transparent,
+    var(--building-color4) 10%,
+    var(--building-color4) 15%,
+  );
 }
 .fb3{
   width: 10%;
