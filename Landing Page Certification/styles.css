@@ -112,7 +112,7 @@ a{
   width: 20vw;
   color: darkorange;
  }
- .desc{
+ .desc {
   display: flex;
   flex-direction: column;
   justify-content: center;
