@@ -10,15 +10,24 @@
 body{
   background-color: #eee; 
 }
-h2{
-  display: block;
-  font-weight: bold;
- }
- p {
-  display: block;
-}
 #page-wrapper{
   position: relative;
+}
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 .logo{
   width: 60vw;
@@ -90,7 +99,20 @@ a{
   background-color: orange;
   transition: 1s;
  }
-#features .desc{
+ .container{
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+ }
+ #features .icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: darkorange;
+ }
+ .desc{
   display: flex;
   flex-direction: column;
   justify-content: center;
